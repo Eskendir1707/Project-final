@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="icon" href="assets/images/icon.png">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="assets/js/adminpanel.js"></script>
+    <link rel='stylesheet' href='assets/css/panels.css' type='text/css' />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>Kazakhstan</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+    <script> 
+        $(function(){ 
+          $("#footer").load("footer.html"); 
+        });
+        </script> 
+</head>
+
+
+<header class="header" id="header">
+  <div class="container">
+      <div class="header__inner">
+          <div class="header__logo" data-scroll="#intro">Kazakhstan</div>
+
+          <nav class="nav" id="nav">
+              <a class="nav__link" href="index.html" >About</a>
+              <a class="nav__link" href="bayterek.html" >Baiterek</a>
+              <a class="nav__link" href="expo.html">Expo</a>
+              <a class="nav__link" href="shymbulak.html" >Shymbulak</a>
+              <a class="nav__link" href="adminpanel.html" >Admin panel</a>
+              </a>
+          </nav>
+
+          <button class="nav-toggle" id="nav_toggle" type="button">
+              <span class="nav-toggle__item">Menu</span>
+          </button>
+      </div>
+  </div>
+</header>
+
+
+<div class="page">
+
+  <!-- Intro -->
+  <div class="intro" id="intro">
+      <div class="container">
+          <div class="intro__inner">
+              <h2 class="intro__suptitle">Tourism in Kazakhstan</h2> 
+
+          </div>
+      </div>
+
+  </div><!-- /.intro -->
+
+
+<body> 
+<form name="registration" id="registration">
+    <div class="container">
+      <h1>Create user</h1>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      <hr>
+      <button  type="button" class="registerbtn" onclick="createUser(1)">Create user</button>
+
+      
+     
+    </div>
+    
+  </form>
+  <form name="updateUser" id="updateUser" >
+    <div class="container">
+      <h1>Update user</h1>
+       
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+  
+       
+  
+      
+      <button type="button" class="registerbtn" onclick="createUser(2)">Update user</button>
+
+      
+    </div>
+    
+  </form>
+  <form name="deleteUser" id="deleteUser">
+    <div class="container">
+      <h1>Delete user</h1>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      <hr>
+      <button type="button" type="submit" class="registerbtn" onclick="createUser(3)">Delete user</button>
+    </div>
+    
+  </form>
+  <form name="disableUser" id="disableUser">
+    <div class="container">
+      <h1>Disable user</h1>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      <hr>
+      <button type="button" type="submit" class="registerbtn" onclick="createUser(4)">Disable user</button>
+    </div>
+    
+  </form>
+  <form name="enableUser" id="enableUser">
+    <div class="container">
+      <h1>Enable user</h1>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      <hr>
+      <button type="button" type="submit" class="registerbtn" onclick="createUser(5)">Enable user</button>
+    </div>
+    
+  </form>
+  <div id="footer"></div>
+</body>
+</html>
